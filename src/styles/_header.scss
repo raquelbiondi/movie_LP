@@ -2,8 +2,7 @@
 
 
 .header {
-    background-color: #000;
-    color: #fff;
+    background-color: transparent;
     padding: 16px;
     transition: color 0.25s ease-in-out;
     display: flex;
@@ -20,8 +19,10 @@
 
         &__title {
             margin-top: 8px;
+            color: variaveis.$corDoTexto;
+            font-family: "Single Day", cursive;
             margin-bottom: 20px;
-            font-size: 40px;
+            font-size: 50px;
             font-weight: bold;
             text-align: center;
 
@@ -42,23 +43,16 @@
             display: flex;
             list-style: none;
             padding: 16px 50px;
-            
+        }
 
-            &__item{
-                margin: 8px;
-                padding: 16px;
-                background-color: variaveis.$corDeFundo;
-                box-shadow: 5px;
-                cursor: pointer;
-                border-radius: 20px;
-                text-align: center;
-
-                a{
-                    text-decoration: none;
-                    font-size: 24px;
-                    font-weight: 600;
-                }
-                
+        .button {
+            margin-bottom: 16px;
+    
+            @media (max-width: 768px) {
+                font-size: 13px;
+                padding: 8px 11px;
+                height: 40px;
+                letter-spacing: 0;
             }
         }
 }

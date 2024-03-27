@@ -25,3 +25,35 @@ body {
     background-color: variaveis.$corDeFundo;
 }
 
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    font-size: 21px;
+    color: variaveis.$corTextoBotao;
+    background-color: variaveis.$corFundoDoBotao;
+    text-transform: uppercase;
+    border-radius: 7px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 2px solid variaveis.$corTextoBotao;
+
+    &:hover {
+        background-color: lighten(variaveis.$corFundoDoBotao, 5%);
+        font-weight: 600;
+    }
+
+    &--secondary {
+        background-color: variaveis.$corFundoBotaoSecundario;
+        color: variaveis.$corDoTexto;
+
+        &:hover {
+            background-color: rgba(variaveis.$corFundoBotaoSecundario, 0.8);
+            border-color: lighten(variaveis.$corFundoBotaoSecundario, 3%);
+            border: 2px solid variaveis.$corDoTexto;
+        }
+    }
+}
